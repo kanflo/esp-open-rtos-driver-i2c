@@ -188,10 +188,10 @@ bool i2c_slave_write(uint8_t slave_addr, uint8_t *data, uint8_t len)
     bool success = false;
     do {
         i2c_start();
-        if (!i2c_write(slave_addr))
+        if (!i2c_write(slave_addr << 1))
             break;
         while (len--) {
-            if (!i2c_write((*data)++))
+            if (!i2c_write(*data++))
                 break;
         }
         i2c_stop();
