@@ -7,8 +7,7 @@ This time a driver for the excellent esp-open-rtos. This is a bit banging I2C dr
 Add the driver to your project as a submodule rather than cloning it:
 
 ````
-% git submodule add https://github.com/kanflo/esp-open-rtos-driver-i2c.git
-% mv esp-open-rtos-driver-i2c i2c
+% git submodule add https://github.com/kanflo/esp-open-rtos-driver-i2c.git i2c
 ````
 The esp-open-rtos makefile-fu will make sure the driver is built.
 
